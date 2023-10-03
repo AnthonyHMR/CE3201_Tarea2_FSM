@@ -1,4 +1,4 @@
-module DemoFSM(input clk, rst, m, t, output rst_timer, mant);
+module MaquinaSF(input clk, rst, m, t, output controller, mant);
 
 logic [1:0] state, next_state;
 
@@ -20,7 +20,7 @@ always_comb
 
 //output logic
 
-assign rst_timer = (state == 2'b01);
+assign controller = (state == 2'b11);
 assign mant = (state == 2'b01);	
 
 endmodule
