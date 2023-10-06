@@ -2,7 +2,7 @@ module RegistroEstado (
     input logic clk,
     input logic reset,
     input logic [7:0] estado,
-    output reg [7:0] estado_actual
+    output logic [7:0] estado_actual
 );
 
     always_ff @(posedge clk or posedge reset) begin

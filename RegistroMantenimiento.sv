@@ -2,7 +2,7 @@ module RegistroMantenimiento (
     input logic clk,
     input logic reset,
     input logic enable,
-    output reg [7:0] num_mante
+    output logic [7:0] num_mante
 );
 
     always_ff @(posedge clk or posedge reset) begin
